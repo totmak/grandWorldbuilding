@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  canvas, img {
+    position: absolute;
+    top:0px;
+    left:0px;
+  }
+  body {
+	background-color: #000000;
+	background-image: url("background.jpg");
+  margin: 0px;
+}
+
+#container {
+  height: 100%;
+}
+
+#RegionMap {
+  left: 250px;
+  position: absolute;
+}
+
+  #infobox {
+    width:250px;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: grey;
+  }
+
+  #infobox h4 {
+    padding: 50px;
+  }
+
+  #backgroundMap, #vectorMap {
+    position: absolute;
+    top:0px;
+    left:0px;
+  }
+
+  #questionInterface {
+    width: 500px;
+    position: absolute;
+    left:33%;
+    top:10%;
+  }
+  #centerGUI {
+    left: 590px;
+  }
+
+  #budgedSlider {
+    left:900px;
+    top:450px;
+    position: absolute;
+  }
+  #timeSlider {
+    left:900px;
+    top:550px;
+    position: absolute;
+  }
+
+  #targetGoalSlider {
+    left:900px;
+    top:650px;
+    position: absolute;
+  }
+
+  input[type="range"] {
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #f0f0f0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  box-shadow: 0 0 5px #007bff;
+}
+
+
+  #questionInterface h4 {
+    text-align:center;
+  }
+
+  #questionInterface button {
+    width: 100%;
+    height: 100%;
+  }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+<script defer src="index_bundle.js"></script></head>
+<body>
+    <div id="root"></div>
+</body>
+
+
+</html>
