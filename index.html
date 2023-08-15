@@ -10,6 +10,7 @@
 	background-color: #000000;
 	background-image: url("background.jpg");
   margin: 0px;
+  overflow: hidden;
 }
 
 #container {
@@ -17,45 +18,47 @@
 }
 
 #RegionMap {
-  left: 250px;
-  top: 100px;
+  top: 20%;
   position: absolute;
+  left: 20%;
+  width: 80%;
 }
 
 #mapImg {
-  width: 250px;
+  width: 100%;
 }
 
 
   #animalBox {
-    width:230px;
-    height:225px;
+    width: 80%;
+    height: 25%;
     position: relative;
-    left:20px;
+    left: 10%;
     background: grey;
     overflow: scroll;
   }
 
   #infobox {
-    width:250px;
+    width:20%;
     height: 100%;
     position: absolute;
     top:0px;
     left:0px;
     background: grey;
+    overflow: hidden;
   }
 
   #optionbox {
-    width:700px;
-    height: 100px;
+    width: 35%;
     position: absolute;
-    top:0px;
-    left:250px;
+    top: 0px;
+    left: 20%;
     background: grey;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
   }
 
 
@@ -63,13 +66,14 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-        box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+    box-sizing: border-box;
+    width: 7%;
   }
 
 
 
   #infobox h4 {
-    padding: 50px;
+    padding: 0% 5%;
   }
 
   #backgroundMap, #vectorMap {
@@ -78,59 +82,61 @@
     left:0px;
   }
 
-  #questionInterface {
-    width: 500px;
-    position: absolute;
-    left:33%;
-    top:10%;
-  }
-  #centerGUI {
-    left: 590px;
-  }
-
-  #budgedSlider {
-    left:900px;
-    top:450px;
-    position: absolute;
-  }
-  #timeSlider {
-    left:900px;
-    top:550px;
-    position: absolute;
-  }
-
-  #targetGoalSlider {
-    left:900px;
-    top:650px;
-    position: absolute;
-  }
-
-  input[type="range"] {
-  -webkit-appearance: none;
-  height: 10px;
-  border-radius: 5px;
-  background: #f0f0f0;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px;
-  border-radius: 50%;
-  background: #007bff;
-  cursor: pointer;
-  box-shadow: 0 0 5px #007bff;
-}
-
-
-  #questionInterface h4 {
-    text-align:center;
-  }
-
-  #questionInterface button {
+@media (max-width: 767px) {
+  #optionbox {
     width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: grey;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
+  #optionbox img {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 10%;
+  }
+
+  #infobox {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    background: grey;
+  }
+  #optionbox {
+    left: 0%;
+  }
+  #RegionMap {
+    top: 30%;
+    left: 0%;
+    width: 100%;
+  }
+
+  #mapImg {
+    width: auto;
+    height: 50%;
+    max-width: 40%;
+  }
+
+  #animalBox {
+  width: 50%;
+  height: 80%;
+  position: relative;
+  left: 0%;
+  background: grey;
+  overflow: scroll;
+  float: right;
+}
+
+}
+
 
 </style>
 <head>
